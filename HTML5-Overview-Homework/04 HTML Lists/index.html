@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Task 04</title>
+    <link rel="stylesheet" href="./styles/indexStyle.css">
+</head>
+<body>
+<p>Preceding text</p>
+<!--MAIN MENU-->
+<ol id="root">
+    <!--LIST ITEM #1-->
+    <li>
+        &nbsp;&nbsp;List item1
+        <!--NESTED ONCE LIST ITEM-->
+        <ol class="nestedOnce" id="alphabeticType">
+            <li>Nested item 1.1</li>
+            <li>Nested item 1.2</li>
+        </ol>
+    </li>
+    <!--LIST ITEM #2-->
+    <li>
+        &nbsp;List item2
+        <!--NESTED ONCE LIST ITEM-->
+        <ol class="nestedOnce" id="decimalType">
+            <li>Nested item 2.1</li>
+            <li>
+                Nested item 2.2
+                <!--NESTED TWICE LIST ITEM-->
+                <ul class="nestedTwice">
+                    <li>Nested item 2.2.1</li>
+                    <li>
+                        Nested item 2.2.2
+                        <!--NESTED TRIPLE LIST ITEM-->
+                        <ul class="nestedTriple">
+                            <li>Nested item 2.2.2.1</li>
+                            <li>Nested item 2.2.2.2</li>
+                        </ul>
+                    </li>
+                    <li>Nested item 2.2.3</li>
+                </ul>
+            </li>
+            <li>Nested item 2.3</li>
+        </ol>
+    </li>
+    <!--LIST ITEM #3-->
+    <li>
+        List item3
+        <!--NESTED ONCE LIST ITEM-->
+        <ul id="bulletType" class="nestedOnce">
+            <li>Nested item 3.1</li>
+            <li>Nested item 3.2</li>
+            <li>Nested item 3.3</li>
+        </ul>
+    </li>
+</ol>
+</body>
+</html>

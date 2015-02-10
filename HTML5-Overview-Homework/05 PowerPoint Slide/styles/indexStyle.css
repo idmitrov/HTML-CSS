@@ -1,0 +1,64 @@
+html, body, div, header, h1, h2, ul, li, a ,p{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px 0 0 50px;
+}
+
+body{
+    background-color: #000;
+    font: 10px 'Arial';
+    text-shadow: 1px 1px 2px #000;
+}
+
+span {
+    color: #DB6;
+    font-weight: bold;
+}
+
+#wraper {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 563px;
+    background: url("../img/PPBackground.jpg") 50% 0 #000 no-repeat;
+}
+#wraper > header > h1 {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+.exampleText {
+    font-size: 1.2rem;
+    padding: 2px 0 2px 2px;
+    margin-left: 16px;
+    width: 860px;
+    background-color: #333333;
+    border: solid 1px #CCC;
+    color: #FFF;
+}
+
+article > header > h1 {
+    color: #DB6;
+    padding: 28px 0 0 24px;
+    font-size: 1.5rem;
+}
+
+article > ul > li {
+    font-size: 1.4rem;
+    color: #DB6;
+    list-style-type: square;
+}
+
+.liColored {
+    color: #FFF;
+}
+
+article > ul > li > p {
+    margin: 0.6rem 0 0.6rem 0;
+}

@@ -1,0 +1,32 @@
+html, body, p{
+    margin: 0;
+    padding: 0;
+}
+ol, ul, li {
+    margin: 0;
+    padding: 2px 0 2px 0;
+}
+#root {
+    padding: 20px;
+    list-style: inside upper-roman;
+}
+.nestedOnce {
+    padding-left: 22px;
+}
+.nestedTwice{
+    padding-left: 40px;
+    list-style-type: circle;
+}
+.nestedTriple{
+    list-style-type: square;
+    padding-left: 40px;
+}
+#alphabeticType {
+    list-style-type: lower-alpha;
+}
+#decimalType {
+    list-style-type: decimal;
+}
+#bulletType {
+    list-style-type: disc;
+}

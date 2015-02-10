@@ -1,0 +1,65 @@
+html, body, header, h1, h2, h3, h4, h5, h6, p, div, span, article, section, nav, ul, li, a, aside, img, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("http://www.mazzbistro.com/restaurants/mazz_bistro/website/images/backgrounds/body-background.jpg") #000;
+    font: 10px 'Verdana', sans-serif;
+    color: #FFF;
+}
+
+#wraper {
+    width: 1024px;
+    height: 320px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0 auto;
+    border: solid 8px rgba(000,000,000,0.7);
+    border-top: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+a:hover {
+    color: #000;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+#mainMenu li{
+
+    list-style-type: none;
+    border-top: solid  2px #000;
+    padding: 10px 0 6px 10px;
+}
+
+#mainMenu li:last-of-type{
+    list-style-type: none;
+    border-bottom: solid  2px #000;
+}
+
+footer {
+    margin: 20px 0 0 10px;
+}
+
+.file {
+    padding:4px 10px 0 24px;
+    background-image: url("https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/512/link.png");
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+}
+
+#moto {
+    font-size: 10px;
+    font-weight: bold;
+    margin: 10px 0 0 0 ;
+    color: #000;
+}

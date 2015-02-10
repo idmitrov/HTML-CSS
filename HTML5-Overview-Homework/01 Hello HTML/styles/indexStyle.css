@@ -1,0 +1,19 @@
+body, header, h1 {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body {
+    background-color: #333;
+}
+header h1 {
+    background-color: #444;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Consolas';
+    font-size: 100px;
+    text-shadow: 2px 2px 4px #000;
+    box-shadow: 2px 3px 40px 2px #000;
+    border-bottom: 4px solid #FFF;
+    border-top: 4px solid #FFF;
+}

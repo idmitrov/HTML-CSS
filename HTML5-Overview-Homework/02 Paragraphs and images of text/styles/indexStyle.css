@@ -1,0 +1,35 @@
+html, body, header, h1, h2, h3, p, img {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #555;
+    color: #CCC;
+    text-shadow: 2px 2px 2px #000;
+}
+
+h1, h2, h3 {
+    color: #FFF;
+    border: solid 2px #CCC;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #333333;
+}
+h1{
+    margin-top: 0;
+}
+p ,pre{
+    margin-top: 10px;
+    padding: 10px;
+    display: inline-block;
+    line-height: 20px;
+    background-color: #333333;
+    border: solid 2px #CCC;
+}
+u {
+    color: #FFF;
+}
+span {
+    font-weight: bold;
+    font-size: 20px;
+}

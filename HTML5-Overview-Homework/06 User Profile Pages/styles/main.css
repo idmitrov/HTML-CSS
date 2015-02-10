@@ -1,0 +1,42 @@
+html, body, header, article, nav, ul, li, a, h1, p, hr , img, span{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ACF;
+    font-size: 10px;
+}
+
+body > header > h1 {
+    font-size: 2rem;
+    margin: 1rem 0 1rem 0.5rem;
+}
+
+article > header > h1 {
+    font-size: 1.2rem;
+    margin: 1rem 0 1rem 0.5rem;
+}
+
+ul {
+    font-size: 1rem;
+    margin: 0 0 1rem 3rem;
+}
+
+img {
+    border: solid 0.1rem #000;
+    margin: 0.5rem 0 0 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0.5rem 0 0 0.5rem;
+}
+
+.userInfo {
+    font-weight: bold;
+}
+.it {
+    font-style: italic;
+}
+
