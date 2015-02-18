@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Task 06</title>
+    <link rel="stylesheet" href="./style/main.css"/>
+</head>
+<body>
+    <div id="calcBody">
+        <div id="calcDisplay">
+            <input type="text" id="input" placeholder="0" disabled="disabled"/>
+        </div>
+        <div id="calcKeyboard">
+            <input type="button" value="1" id="btnOne" name="keyboard" class="keys keypad" onclick="input.value += '1'"><input
+                type="button" value="2" id="btnTwo" name="keyboard" class="keys keypad" onclick="input.value += '2'"><input
+                type="button" value="3" id="btnTree" name="keyboard" class="keys keypad" onclick="input.value += '3'"><input
+                type="button" value="+" id="btnPlus" name="keyboard" class="keys" onclick="input.value += '+'"><input
+                type="button" value="4" id="btnFour" name="keyboard" class="keys keypad" onclick="input.value += '4'"><input
+                type="button" value="5" id="btnSFive" name="keyboard" class="keys keypad" onclick="input.value += '5'"><input
+                type="button" value="6" id="btnSix" name="keyboard" class="keys keypad" onclick="input.value += '6'"><input
+                type="button" value="-" id="btnMinus" name="keyboard" class="keys" onclick="input.value += '-'"><input
+                type="button" value="7" id="btnSeven" name="keyboard" class="keys keypad" onclick="input.value += '7'"><input
+                type="button" value="8" id="btnEight" name="keyboard" class="keys keypad" onclick="input.value += '8'"><input
+                type="button" value="9" id="btnNine" name="keyboard" class="keys keypad" onclick="input.value += '9'"><input
+                type="button" value="*" id="btnMultiply" name="keyboard" class="keys" onclick="input.value += '*'"><input
+                type="button" value="C" id="btnReset" name="keyboard" class="keys" onclick="input.value = input.value.substring(0, input.value.length - 1)"><input
+                type="button" value="0" id="btnZero" name="keyboard" class="keys keypad" onclick="input.value += '0'"><input
+                type="button" value="=" id="btnSubmit" name="keyboard" class="keys" onclick="input.value = eval(input.value)"><input
+                type="button" value="/" id="btnSubtract" name="keyboard" class="keys" onclick="input.value += '/'">
+            <!--ONCLICK AND JS IN HTML IS AN BAD PRACTICE I KNOW, BUT I STILL DON'T KNOW HOW TO USE AddEventListener METHOD-->
+        </div>
+    </div>
+</body>
+</html>

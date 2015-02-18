@@ -1,0 +1,84 @@
+html, body, div, input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+html {
+    font: 10px 'Arial', sans-serif;
+    color: #FFF;
+}
+
+body {
+    background-color: #333;
+}
+
+/*CALCULATOR BODY*/
+div#calcBody{
+    height: 28rem;
+    width: 21.8rem;
+    margin: 4% auto;
+    background: rgb(181,189,200); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(181,189,200,1)), color-stop(36%,rgba(130,140,149,1)), color-stop(100%,rgba(40,52,59,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
+    box-shadow: 0 0.1rem 0.8rem #000;
+    border-radius: 0.4rem;
+    padding: 1rem;
+}
+/*END OF CALCULATOR BODY*/
+
+/*CALCULATOR DISPLAY*/
+input[type="text"] {
+    width: 100%;
+    height: 6rem;
+    font: 3.6rem 'Consolas', sans-serif;
+    color: #222;
+    text-align: right;
+    background-color: #DDD;
+    box-shadow: 0 0 0 0.1rem rgba(0,0,0,0.3);
+}
+/*END OF CALCULATOR DISPLAY*/
+
+/*CALCULATOR KEYBOARD*/
+div#calcKeyboard {
+    width: 100%;
+    height: 72%;
+    margin-top: 2rem;
+}
+/*END OF CALCULATOR KEYBOARD*/
+
+/*CALCULATOR KEYS*/
+
+/*KEY PAD NUMBERS ONLY*/
+input[type="button"].keypad {
+    background-color: #EEE;
+    color: #222;
+}
+
+input[type="button"] {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #FFF;
+    background-color: #BBB;
+    font-weight: bold;
+    width: 25%;
+    height: 25%;
+    outline: solid 1px #555;
+}
+
+/*KEY PRESSED*/
+input[type="button"]:active {
+    border: inset 1px #CCC;
+}
+
+/*KEYPAD MOUSE OVER*/
+input[type="button"]:hover {
+    cursor: pointer;
+}
+/*END OF CALCULATOR KEYS*/

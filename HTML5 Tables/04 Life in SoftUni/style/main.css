@@ -1,0 +1,152 @@
+/*RESET*/
+html, header, body, table, thead, tbody, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font: 10px 'Arial', sans-serif;
+    text-align: center;
+}
+
+/*MAIN TABLE WIDTH/HEIGHT + FONT SIZE*/
+body > table {
+    font-size: 1.6rem;
+    height: 57rem;
+    width: 43.9rem;
+}
+
+/*CELLS DEFAULT HEIGHT*/
+body > table > tbody > tr > td,
+body > table > thead > tr > th {
+    height: 10.6rem;
+}
+
+/*TABLE(s)/CELL(s) BORDER + BORDER SPACING*/
+table, table td, table th {
+    border-spacing: 0.2rem;
+    border: solid 0.2rem #000;
+}
+
+/*HEADER PROPERTIES*/
+table > thead > tr > th {
+    font-size: 3.6rem;
+    font-weight: 800;
+}
+
+/*END OF HEADER PROPERTIES*/
+
+/*MAIN TABLE ROWS*/
+
+/*ROW 1*/
+body > table > tbody > tr:first-child td {
+    width: 50%;
+}
+
+/*CELL 1*/
+body > table > tbody > tr:first-child > td:nth-of-type(1) {
+    height: 9.8rem;
+    vertical-align: top;
+    text-align: left;
+    padding-left: 0.5rem;
+    padding-top: 0.8rem;
+}
+
+/*CELL 2*/
+body > table > tbody > tr:first-child > td:nth-of-type(2) {
+    height: 9.8rem;
+    vertical-align: top;
+    text-align: right;
+    padding-right: 0.5rem;
+    padding-top: 0.8rem;
+}
+
+/*END OF ROW1*/
+
+/*ROW 2*/
+
+/*ALL CELLS WIDTH IN ROW1*/
+body > table > tbody > tr:nth-of-type(2) td {
+    width: 10.5rem;
+}
+
+/*CELL 1*/
+body > table > tbody > tr:nth-of-type(2) > td:nth-of-type(1) {
+    text-align: center;
+    vertical-align: top;
+    padding-top: 0.8rem;
+    height: 9.8rem;
+}
+
+/*CELL 2 AND CELL 4*/
+body > table > tbody > tr:nth-of-type(2) > td:nth-of-type(2),
+body > table > tbody > tr:nth-of-type(2) > td:nth-of-type(4) {
+    text-align: left;
+    width: 10rem;
+    padding-left: 0.5rem;
+}
+
+/*CELL 3*/
+body > table > tbody > tr:nth-of-type(2) > td:nth-of-type(3) {
+    height: 9.8rem;
+    text-align: center;
+    vertical-align: bottom;
+    padding-bottom: 0.8rem;
+}
+
+/*END OF ROW2*/
+
+/*ROW 3*/
+
+/*CELL1 AND CELL 2*/
+body > table > tbody > tr:nth-of-type(3) > td:nth-of-type(1),
+body > table > tbody > tr:nth-of-type(3) > td:nth-of-type(2) {
+    vertical-align: bottom;
+    padding-bottom: 0.8rem;
+}
+
+/*CELL1*/
+body > table > tbody > tr:nth-of-type(3) > td:nth-of-type(1) {
+    text-align: right;
+    padding-right: 0.5rem;
+}
+
+/*CELL2*/
+body > table > tbody > tr:nth-of-type(3) > td:nth-of-type(2) {
+    text-align: left;
+    padding-left: 0.5rem;
+}
+
+/*CELL 3*/
+
+/*NESTED TABLE (ROW3 CELL3) PROPERTIES*/
+table table {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+table tr:nth-of-type(3) td:nth-of-type(3) {
+    padding: 0.4rem;
+}
+
+/*END OF NESTED TABLE*/
+
+/*END OF ROW3*/
+
+/*ROW 4*/
+
+/*CELL 1*/
+body > table > tbody > tr:last-of-type td:first-of-type {
+    font-size: 2.2rem;
+    text-align: right;
+    padding-right: 0.8rem;
+}
+
+/*CELL2*/
+body > table > tbody > tr:last-of-type td:nth-of-type(2) {
+    text-align: left;
+    padding-left: 0.4rem;
+}
+
+/*END OF ROW4*/
