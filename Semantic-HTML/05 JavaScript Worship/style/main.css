@@ -1,0 +1,22 @@
+html, body, div, canvas {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font: 10px 'Arial', sans-serif;
+    color: #000;
+}
+
+#wraper {
+    margin:10% auto;
+    width: 23.7rem;
+    height: 25.6rem;
+}
+
+canvas {
+    font-size: 4rem;
+    width: 23.1rem;
+    height: 25rem;
+    border: dotted 0.3rem #ff0000;
+}

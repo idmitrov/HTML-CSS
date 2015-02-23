@@ -1,0 +1,207 @@
+/*RESET*/
+html, body, div, header, h1, main, section, article, footer, aside, nav, ul, li, a, p, details, summary form, input, frame, frameset{
+    padding: 0;
+    margin: 0;
+}
+/*UNORDERED LIST REMOVING BULLET*/
+ul {
+    list-style-type: none;
+}
+/*
+  LINKS COLOR
+  UNDERLINE DECORATION DISABLING
+*/
+a {
+    text-decoration: none;
+    color: #888;
+}
+
+/*LINKS ON MOUSE OVER COLOR*/
+a:hover {
+    color: #09F;
+}
+
+/*END OF RESET*/
+
+/*HTML*/
+html {
+    font: 10px 'Calibri', sans-serif;
+    color: #000;
+}
+/*BODY*/
+body {
+    background-color: #555;
+}
+
+/*MAIN WRAPER*/
+#wraper {
+    margin: 0 auto;
+    width: 76.8rem;
+    height: 100%;
+    text-align: left;
+}
+    /*MAIN HEADER*/
+    #wraper > header {
+        background-color: #222;
+        height: 4rem;
+        padding: 2rem 1rem 1rem 2rem;
+    }
+
+    #wraper > header > h1 > a{
+        color: #EEE;
+        text-shadow: 0 0.1rem 0.1rem #000;
+    }
+    /*MAIN NAVIGATION*/
+    #wraper > nav {
+        line-height: 4rem;
+        font-size: 1.6rem;
+        font-weight: bold;
+        background-color: #555;
+        height: 4rem;
+        /*border-bottom: solid 0.4rem #222;*/
+    }
+
+    #wraper > nav > ul > li {
+        float: left;
+        margin-left: 2rem;
+    }
+
+    #wraper > nav > ul > li > a {
+        color: #09F;
+        text-shadow: 0 0.1rem 0.1rem #000;
+    }
+
+    #wraper > nav > ul > li > a:hover {
+        border-bottom: solid 0.2rem #09F;
+    }
+
+    /*SEARCH FORM*/
+    form {
+        clear: both;
+        background-color: #222;
+        width: 100%;
+        float: right;
+        text-align: right;
+        height: 4rem;
+    }
+    /*SEARCH BAR*/
+    input[type="search"]{
+        padding: 0.5rem;
+        height: 3rem;
+        border: solid 0.1rem #222;
+        border-radius: 0.5rem;
+        margin-right: -1.8rem;
+    }
+    /*SEARCH SUBMIT BUTTON*/
+    input[type="submit"] {
+        font-size: 0.8rem;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        outline: none;
+        border: none;
+        position: relative;
+        top: -0.2rem;
+        right: 1rem;
+        color: #222;
+        background-color: #AAA;
+    }
+    input[type="button"]:active {
+        background-color: #999;
+        color: #FFF;
+    }
+input[type="button"]:hover {
+    cursor: pointer;
+}
+/*LEFT SIDE BAR*/
+aside {
+    text-align: left;
+    font-size: 2rem;
+    padding: 0 1rem 1rem 1rem;
+    clear: both;
+    float: left;
+    width: 20rem;
+    height: 81rem;
+    background-color: #222;
+}
+
+aside a {
+    display: block;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+aside a:first-of-type{
+    margin: 0;
+}
+/*MAIN*/
+main {
+    font-size: 1.8rem;
+    padding: 1rem;
+    background-color: #FFF;
+    float: left;
+    width: 52.8rem;
+    height: 80rem;
+}
+
+/*SECTION*/
+section a:last-of-type {
+    display: block;
+    margin-top: 4rem;
+    color: #09F;
+}
+
+/*ARTICLES*/
+article {
+    margin-top: 4rem;
+    text-align: justify;
+}
+
+article:first-of-type {
+    margin: 0;
+}
+
+article header {
+   font-size: 2rem;
+}
+
+article footer {
+    color: #999;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+article p {
+    margin-top: 1rem;
+}
+
+article summary {
+    background-color: #DDD;
+    border: solid 0.1rem #CCC;
+    width: 18rem;
+    outline: none;
+}
+
+/*FOOTER*/
+#wraper > footer {
+    clear: both;
+    padding: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: #222;
+}
+
+#wraper > footer ul li {
+    float: left;
+    margin-left: 2rem;
+}
+
+#wraper > footer p {
+    color: #EEE;
+    text-align: right;
+}
+
+#wraper footer h1 a {
+    font-size: 1.4rem;
+    color: #09F;
+}

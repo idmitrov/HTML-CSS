@@ -1,0 +1,275 @@
+html, body, div, header, footer, h1, nav, ul, li, a, p, form, input, img, section, article, aside {
+    padding: 0;
+    margin: 0;
+}
+
+/*END OF RESET*/
+
+/*HTML*/
+html {
+    font: 10px 'Arial', sans-serif;
+}
+
+/*BODY*/
+body {
+   background: url("https://abs.twimg.com/images/themes/theme1/bg.png") repeat-x 0 0 #C0DEED;
+}
+
+/*WRAPPER*/
+#wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 128rem;
+    height: 102.4rem;
+}
+/*HEADER*/
+header {
+    padding-top: 1.4rem;
+    background-color: #FFF;
+    height: 3.2rem;
+    text-align: center;
+}
+
+header > h1 {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+/*NAVIGATION*/
+nav {
+    position: absolute;
+    top:0;
+    left: 0;
+    font-size: 1.4rem;
+    width: 100%;
+    background-color: #FFF;
+}
+
+    nav > ul {
+        list-style-type: none;
+    }
+
+    nav > ul > li {
+        float: left;
+    }
+
+    nav > ul > li > a {
+        color: #4f83ba;
+        text-decoration: none;
+        padding-top: 1.4rem;
+        padding-right: 2rem;
+        padding-left: 3rem;
+        display: inline-block;
+        height: 2.7rem;
+    }
+
+    nav > ul > li > a:hover {
+        color: #09F;
+        border-bottom: solid 0.5rem #09F;
+    }
+
+    /*NAVIGATION ICONS*/
+    a#home-nav {
+        background: url("../img/home-btn.jpg") no-repeat 0 50%;
+        margin-left: 1rem;
+    }
+    a#notify-nav {
+        background: url("../img/notify-btn.jpg") no-repeat 0 50%;
+    }
+    a#discover-nav {
+        background: url("../img/discover-btn.jpg") no-repeat 0 50%;
+    }
+    a#profile-nav {
+        background: url("../img/me-btn.jpg") no-repeat 0 50%;
+    }
+    #msg-nav {
+        background: url("../img/msg-btn.jpg") no-repeat 0 50%;
+        position: absolute;
+        top:0;
+        right: 10rem;
+        padding-left: 0;
+    }
+    #settings-nav {
+        background: url("../img/settings-btn.png") no-repeat 0 50%;
+        position: absolute;
+        top:0;
+        right: 6rem;
+        padding-left: 0;
+    }
+    #tweet-nav {
+        background: url("../img/tweet-btn.jpg") no-repeat 0 50%;
+        position: absolute;
+        top:0;
+        right: 2rem;
+        padding-left: 0;
+    }
+    /*END OF NAVIGATION ICONS*/
+
+/*FORM*/
+form#searchForm {
+    background-color: #A9B1B7;
+    padding: 0 0.5rem 0.5rem 1rem;
+    border-radius: 1rem;
+    display: inline-block;
+    height: 2.4rem;
+    margin-top: 0.8rem;
+    margin-left: 38rem;
+}
+    form#searchForm > input {
+        height: 100%;
+        outline: none;
+        border: none;
+    }
+    form#searchForm input[type="search"] {
+        color: #FFF;
+        background: transparent;
+    }
+    form#searchForm input[type="search"]::-moz-placeholder,
+    form#searchForm input[type="search"]:-moz-placeholder,
+    form#searchForm input[type="search"]:-ms-input-placeholder {
+        color: #FFF;
+    }
+    input[type="search"]::-webkit-input-placeholder{
+        color: #FFF;
+        padding-top: 0.2rem;
+    }
+
+    form#searchForm input[type="submit"] {
+        vertical-align: bottom;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background: url("https://serenitysecurity.co.uk/wp-content/themes/bluediamond-v1-08/images/icon/dark/top-search-button.png") no-repeat 0.2rem 0.4rem;
+    }
+
+    form#searchForm input[type="submit"]:active {
+        margin-left: 0.2rem;
+    }
+
+/*END OF HEADER*/
+
+#dashBoard {
+    display: inline-block;
+    margin-top: 1rem;
+    width: 28rem;
+    border-radius: 0.5rem;
+    background: rgb(0,136,185); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(0,136,185,1) 50%, rgba(255,255,255,1) 50%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,rgba(0,136,185,1)), color-stop(50%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,136,185,1) 50%,rgba(255,255,255,1) 50%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,136,185,1) 50%,rgba(255,255,255,1) 50%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,136,185,1) 50%,rgba(255,255,255,1) 50%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,136,185,1) 50%,rgba(255,255,255,1) 50%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0088b9', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    padding: 6rem 0 0 1rem;
+}
+
+#dashBoard header {
+    background: transparent;
+    text-align: left;
+}
+
+#dashBoard img {
+    border: solid 0.5rem #FFF;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+#dashBoard mark {
+    background: transparent;
+    color: #222;
+    font-size: 1.2rem;
+}
+
+footer {
+    position: relative;
+    top: 7rem;
+}
+
+#dashBoard footer p {
+    display: inline-block;
+    padding-left: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+}
+
+#dashBoard footer p mark{
+    color: #09F;
+    margin-top: 0.5rem;
+}
+
+#postNewTweet {
+    background-color: #d9eff7;
+    height: 2rem;
+    width: 27rem;
+    border-top: solid 0.1rem #CCC;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 8.6rem;
+    margin-left: -1rem;
+}
+
+#newTweet input {
+    text-align: left;
+    outline: none;
+    width: 98%;
+    height: 100%;
+}
+/*SECTION*/
+
+#mainContent {
+    padding: 1rem 0 1rem 1rem;
+    vertical-align: top;
+    display: inline-block;
+    margin: 1rem 0 0 1rem;
+    border-radius: 0.5rem;
+    background-color: #FFF;
+    width: 71.2rem;
+}
+
+section > header {
+    text-align: left;
+    padding-top: 0;
+    color: #777;
+}
+
+section article {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    border-top: solid 0.1rem rgba(230,230,230, 0.7);
+}
+
+section article > header {
+    display: inline-block;
+    text-align: left;
+    font-family: 'Calibri', sans-serif;
+    font-size: 1.6rem;
+}
+
+section article header > p {
+    display: inline-block;
+    color: #777;
+}
+
+section article > p {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+
+/*ASIDE*/
+
+aside#suggestions {
+    padding: 1rem;
+    font-size: 1.4rem;
+    background-color: #FFF;
+    vertical-align: top;
+    display: inline-block;
+    border-radius: 0.5rem;
+    margin: 1rem 0 0 1rem;
+    width: 22rem;
+    height: 32rem;
+}
+

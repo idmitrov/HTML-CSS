@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Using Frame for layout</title>
+    <link rel="stylesheet" href="../styles/mainFrameVer.css"/>
+</head>
+<frameset rows="112, 80, 418, *" border="0" frameborder="0" framespacing="0">
+    <frame src="header.html"/>
+    <frame src="mainNavigation.html"/>
+    <frameset cols="299, 238, *" border="0" frameborder="0" framespacing="0">
+        <frame src="wraper.html"/>
+        <frame src="aside.html" scrolling="no"/>
+        <frame src="main.html" scrolling="auto" framespacing="0"/>
+    </frameset>
+    <frame src="footer.html"/>
+</frameset>
+</html>
+
+<!--I HATE FRAMESETS! AND IM HAPPY THAT IS DEPRECATED LOL!-->

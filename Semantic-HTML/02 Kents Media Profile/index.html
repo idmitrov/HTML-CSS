@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Task 02</title>
+    <link rel="stylesheet" href="./style/main.css"/>
+</head>
+<body>
+    <article>
+        <header>
+            <h1>Profile</h1>
+        </header>
+        <figure id="profile">
+            <figcaption>User: Kent</figcaption>
+            <img src="./img/avatar.jpg" alt="profile-picture" width="137" height="111"/>
+        </figure>
+        <figure id="progress">
+            <figcaption>Profile completed 60%</figcaption>
+            <meter value="60" min="0" max="100">
+                60% of 100%
+            </meter>
+        </figure>
+        <figure id="audio">
+            <figcaption>Uploaded Audio Files</figcaption>
+            <embed src="http://download.wavetlan.com/SVV/Media/HTTP/MP3/Nero_SmartTrax/NeroSmartTrax_test1_MPEG2_Stereo_CBR_48kbps_22050Hz.mp3" type="audio/mp3"/>
+            <audio controls="controls">
+                <source src="http://download.wavetlan.com/SVV/Media/HTTP/MP3/Nero_SmartTrax/NeroSmartTrax_test2_MPEG1_Mono_CBR_64kbps_44100Hz.mp3">
+                Your browser doesn't support this feature!
+            </audio>
+            <audio controls="controls">
+                <source src="http://download.wavetlan.com/SVV/Media/HTTP/MP3/Nero_SmartTrax/NeroSmartTrax_test4_MPEG2_Mono_CBR_40kbps_24000Hz.mp3">
+                Your browser doesn't support this feature!
+            </audio>
+        </figure>
+        <figure id="video">
+            <figcaption>Uploaded Video Files</figcaption>
+            <video width="258" height="145" controls="controls">
+                <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
+				<track src="./res/subs.vtt" kind="subtitles" srclang="eng" label="English" default>
+                <!--
+                   SUBS RUNS ONLY FROM IDE (WebStorm, VS etc...) LOCAL HOST
+                   FROM FILE SYSTEM HAS ORIGINS ISSUE
+                   IF YOU CAN GIVE ME AN ADVICE HOW TO ENABLE ORIGINS OR HOW TO FIX IT AT ALL I WOULD THANK THANK YOU SO MUCH!
+                   NOTICE: crossorigin="anonymous" or crossorigin="use-credentials" DOESN'T HELP.
+               -->
+                Your browser doesn't support this feature!
+            </video>
+        </figure>
+    </article>
+</body>
+</html>
