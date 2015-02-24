@@ -1,0 +1,259 @@
+html, body ,table, thead, tbody,tr, th, td, select, option, button{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font: 10px 'Verdana', sans-serif;
+}
+
+body {
+    background-color: #00953f;
+}
+
+table {
+    text-align: center;
+    margin: 1rem auto;
+    border-spacing: 0;
+    width: 58.8rem;
+    height: 20.1rem;
+    border: solid 0.1rem #000;
+    border-radius: 0.9rem ;
+}
+
+/*HEADER*/
+
+table thead {
+    font-size: 1.2rem;
+}
+
+table th {
+    height: 3rem;
+    background: rgb(255,221,19); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255,221,19,1) 0%, rgba(247,207,11,1) 4%, rgba(254,207,16,1) 7%, rgba(255,203,19,1) 11%, rgba(255,201,17,1) 14%, rgba(255,204,18,1) 18%, rgba(254,203,14,1) 21%, rgba(254,205,14,1) 25%, rgba(254,205,17,1) 29%, rgba(254,205,17,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,221,19,1)), color-stop(4%,rgba(247,207,11,1)), color-stop(7%,rgba(254,207,16,1)), color-stop(11%,rgba(255,203,19,1)), color-stop(14%,rgba(255,201,17,1)), color-stop(18%,rgba(255,204,18,1)), color-stop(21%,rgba(254,203,14,1)), color-stop(25%,rgba(254,205,14,1)), color-stop(29%,rgba(254,205,17,1)), color-stop(100%,rgba(254,205,17,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255,221,19,1) 0%,rgba(247,207,11,1) 4%,rgba(254,207,16,1) 7%,rgba(255,203,19,1) 11%,rgba(255,201,17,1) 14%,rgba(255,204,18,1) 18%,rgba(254,203,14,1) 21%,rgba(254,205,14,1) 25%,rgba(254,205,17,1) 29%,rgba(254,205,17,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255,221,19,1) 0%,rgba(247,207,11,1) 4%,rgba(254,207,16,1) 7%,rgba(255,203,19,1) 11%,rgba(255,201,17,1) 14%,rgba(255,204,18,1) 18%,rgba(254,203,14,1) 21%,rgba(254,205,14,1) 25%,rgba(254,205,17,1) 29%,rgba(254,205,17,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,221,19,1) 0%,rgba(247,207,11,1) 4%,rgba(254,207,16,1) 7%,rgba(255,203,19,1) 11%,rgba(255,201,17,1) 14%,rgba(255,204,18,1) 18%,rgba(254,203,14,1) 21%,rgba(254,205,14,1) 25%,rgba(254,205,17,1) 29%,rgba(254,205,17,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255,221,19,1) 0%,rgba(247,207,11,1) 4%,rgba(254,207,16,1) 7%,rgba(255,203,19,1) 11%,rgba(255,201,17,1) 14%,rgba(255,204,18,1) 18%,rgba(254,203,14,1) 21%,rgba(254,205,14,1) 25%,rgba(254,205,17,1) 29%,rgba(254,205,17,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdd13', endColorstr='#fecd11',GradientType=0 ); /* IE6-9 */
+    border-bottom: solid 0.1rem #000;
+    border-right: solid 0.1rem #000;
+}
+
+    table th:first-of-type {
+        border-top-left-radius: 0.8rem;
+        text-align: right;
+        padding-right: 0.5rem;
+    }
+
+    table th:last-of-type {
+        border-top-right-radius: 0.8rem;
+    }
+
+    table th:last-of-type,
+    table td:last-of-type {
+        border-right: none;
+    }
+
+     table th:nth-of-type(1),
+     table th:nth-of-type(3) {
+        width: 9.5rem;
+    }
+
+    table th:nth-of-type(2),
+    table th:nth-of-type(4) {
+        width: 5.6rem;
+    }
+
+    table th:nth-of-type(3) {
+        text-align: left;
+        padding-left: 0.5rem;
+    }
+/*END OF HEADER*/
+
+/*BODY*/
+
+tbody {
+    font-size: 1rem;
+}
+
+
+    tbody tr:nth-of-type(even) td{
+        background-color: #CCC;
+    }
+
+    tbody td {
+        background-color: #FFF;
+        height: 2.3rem;
+        border-bottom: solid 0.1rem #000;
+        border-right: solid 0.1rem #000;
+    }
+
+    tbody td:nth-of-type(3) {
+        width: 10.8rem;
+    }
+
+    tbody td:nth-of-type(5) {
+        width: 8rem;
+    }
+
+    tbody td:nth-of-type(6) {
+        width: 6.5rem;
+    }
+    tbody td:nth-of-type(7) {
+        width: 8.8rem;
+    }
+
+tbody td:nth-of-type(8) {
+    padding: 0.5rem;
+}
+
+/*BET SCORE 0:0*/
+
+.betScoreDisabled {
+    color: #F00;
+    background: url("../img/arrow.png") no-repeat right #DDD;
+}
+
+.betScoreEnabled {
+    color: #008000;
+    background: url("../img/arrow.png") no-repeat right #FFF;
+}
+
+.betScore {
+    width: 2.1rem;
+    height: 2.1rem;
+    border: solid 0.1rem #C9C9C9;
+    font-size: 0.8rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-size: 0.6rem;
+}
+
+/*END OF BET SCORE*/
+
+/*LAST ROW*/
+tbody tr:last-of-type td {
+    border-bottom: none;
+}
+
+tbody tr:last-of-type td:first-of-type{
+    border-bottom-left-radius: 0.8rem;
+}
+
+tbody tr:last-of-type td:last-of-type{
+    border-bottom-right-radius: 0.8rem;
+}
+
+/*FLAGS*/
+
+table td:nth-of-type(1){
+    text-align: right;
+    padding-right: 0.4rem;
+}
+
+table td:nth-of-type(3){
+    text-align: left;
+    padding-left: 0.4rem;
+}
+.flag-team1 {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.1rem;
+    margin-left: 0.2rem;
+}
+
+.bet-team1 {
+    text-align: right;
+    padding-right: 0.5rem;
+}
+
+.bet-team2 {
+    text-align: left;
+    padding-left: 0.5rem;
+}
+
+
+.flag-team2 {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.1rem;
+    margin-right: 0.2rem;
+}
+
+#brazil{
+    background: url("../img/flag-br.png") no-repeat;
+    background-size: 1.5rem 1.1rem;
+}
+
+#mexico {
+    background: url("../img/flag-mex.png") no-repeat;
+    background-size: 1.5rem 1.1rem;
+}
+
+#spain {
+    background: url("../img/flag-sp.png") no-repeat;
+    background-size: 1.5rem 1.1rem;
+}
+
+#netherlands {
+    background: url("../img/flag-neth.png") no-repeat;
+    background-size: 1.5rem 1.1rem;
+}
+
+#italy {
+    background: url("../img/flag-it.png") no-repeat;
+    background-size: 1.5rem 1.1rem;
+}
+
+#england {
+    background: url("../img/flag-eng.png") no-repeat;
+    background-size: 1.5rem 1.1rem;
+}
+
+#argentina {
+    background: url("../img/flag-arg.png") no-repeat;
+    background-size: 1.5rem 1.1rem;
+}
+
+#bosnia {
+    background: url("../img/flag-bos.png") no-repeat;
+    background-size: 1.5rem 1.1rem;
+}
+
+#germany {
+    background: url("../img/flag-ger.png") no-repeat;
+    background-size: 1.5rem 1.1rem;
+}
+
+#portugal {
+    background: url("../img/flag-port.png") no-repeat;
+    background-size: 1.5rem 1.1rem;
+}
+/*END OF FLAGS*/
+
+/*BET BUTTON*/
+button {
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: #FFF;
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 0.2rem solid #999;
+    border-radius: 50%;
+    outline: none;
+}
+
+button.enabled {
+    background-color: #00953f;
+}
+
+button.disabled {
+    background-color: #FF0000;
+}
+
+button.enabled:active {
+    background-color: #07c906;
+}
