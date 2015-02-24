@@ -1,0 +1,124 @@
+html, body, form, fieldset, legend, input, p, div {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+html {
+    font: 10px 'Arial', sans-serif;
+    color: #000;
+}
+
+body {
+    background-color: #FFF;
+}
+
+form {
+    padding-top: 2rem;
+    position: relative;
+    height: 16rem;
+    width: 48rem;
+    border-top: dotted 0.5rem #FF0;
+    border-right: solid 1rem #090;
+    border-bottom: double 0.7rem #00F;
+    border-left: dotted 0.5rem #F00;
+    box-shadow: 2rem 2rem 0.2rem #333;
+    text-align: center;
+}
+
+    form > p {
+        font-size: 3.2rem;
+        text-shadow: 1rem 1rem 1rem #CCC;
+    }
+
+    form > fieldset {
+        position: absolute;
+        bottom: 2rem;
+        left: 2.5rem;
+        background-color: #FFF;
+        width: 42.4rem;
+        height: 7.5rem;
+        border-radius: 5rem;
+        box-shadow: 0 0 0 0.2rem #F00,
+                    0 0 0 0.4rem #FF0,
+                    0 0 0 0.6rem #080,
+                    0 0 0 0.8rem #00F;
+    }
+
+    form > fieldset > legend {
+        position: absolute;
+        top: 0.8rem;
+        left: 7rem;
+        font-size: 1.6rem;
+        text-shadow:  1rem 1rem 1rem #CCC;
+    }
+
+    form > fieldset > input {
+        position: relative;
+        top: 1.2rem;
+        width: 13.6rem;
+        padding-left: 1rem;
+        margin-top: 2.8rem;
+        margin-left: 0.5rem;
+        background-color: #C90;
+        border: outset 0.3rem #C90;
+    }
+/*POPUP COMMENT BOXES*/
+.comBox {
+    border-radius: 50%;
+}
+.comBoxIn {
+    border: dashed 0.2rem #FFF;
+    position: relative;
+}
+.comBoxOut {
+    position: absolute;
+    background-color: rgba(135, 135, 135, 0.8);
+}
+/*MINI*/
+#popMinOut {
+    top: 11.2rem;
+    left: 38rem;
+    width: 2.2rem;
+    height: 2.2rem;
+}
+#popMinIn {
+    top: 0.3rem;
+    left: 0.3rem;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+/*MEDIUM*/
+#popMedOut {
+    top: 8.2rem;
+    left: 41rem;
+    width: 3.2rem;
+    height: 3.2rem;
+}
+#popMedIn {
+    top: 0.3rem;
+    left: 0.3rem;
+    width: 2.2rem;
+    height: 2.2rem;
+}
+/*MAX*/
+#popMaxOut {
+    top: 4.2rem;
+    left: 45rem;
+    width: 10.2rem;
+    height: 5.2rem;
+    border-radius: 10rem;
+}
+#popMaxIn {
+    top: 0.3rem;
+    left: 0.3rem;
+    width: 9.2rem;
+    height: 3.7rem;
+    border-radius: 10rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #FFF;
+}
+

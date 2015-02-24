@@ -1,0 +1,43 @@
+html, body, header, h1, article, div {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'animated';
+    src: url('../font/Animated.ttf') format('truetype');
+}
+
+html {
+    font: 10px 'animated', sans-sefif;
+    color: #ffcc33;
+}
+
+body {
+    background-color: #FFF;
+}
+
+article {
+    margin: 0 auto;
+    width: 90rem;
+    height: 60rem;
+    background: url('../img/VladoKHula.png') no-repeat 68rem 23rem,
+                url('../img/AlexHula.png') no-repeat 50rem 20rem,
+                url('../img/NakovHula.png') no-repeat 41rem 16.5rem,
+                url('../img/TediHula.png') no-repeat 26rem 37.5rem,
+                url('../img/PetiaHula.png') no-repeat 18rem 20.5rem,
+                url('../img/VladoGHula.png') no-repeat 4rem 24rem,
+                url('../img/HawaiiBackground.png') no-repeat center center,
+                radial-gradient(ellipse at center, rgba(255,255,255,1) 16%,rgba(0,182,214,1) 60%) no-repeat -30rem -15rem,
+                #00b6d6;
+}
+
+    article > header  {
+        padding: 0.5rem 1rem 0 0;
+        letter-spacing: 0.2rem;
+        text-align: right;
+    }
+    article > header > h1 {
+        font-size: 4.4rem;
+        font-weight: normal;
+    }

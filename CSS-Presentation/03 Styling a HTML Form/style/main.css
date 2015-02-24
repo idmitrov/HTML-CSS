@@ -1,0 +1,111 @@
+html, body, form , input, fieldset ,p, textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+html {
+    font: 10px 'Arial', sans-serif #000;
+    color: #000;
+}
+
+.fields {
+    border-radius: 0.2rem;
+}
+
+form p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFF;
+    margin: 1rem 0 1rem 0;
+    text-align: left;
+}
+
+form p:first-of-type {
+    margin-top: 0;
+}
+
+form {
+    text-align: center;
+    padding: 1rem;
+    width: 32.8rem;
+    height: 100%;
+    background: url("../img/formBackground.jpg") no-repeat center 0 #FFF;
+}
+
+fieldset {
+    margin-top: 0.2rem;
+    padding: 0.5rem;
+    width: 96%;
+    background-color: rgba(255,255,255,0.4);
+    border: solid 0.1rem #FFF;
+    text-align: left;
+}
+
+label {
+    vertical-align: top;
+    display: inline-block;
+    width: 8rem;
+    margin-right: 1rem;
+    line-height: 1.8rem;
+}
+
+input[type="text"], input[type="password"] {
+    padding-left: 0.5rem;
+    width: 55%;
+    height: 2rem;
+}
+
+textarea {
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    width: 55%;
+}
+
+input[type="radio"], input[type="submit"], label {
+    cursor: pointer;
+}
+
+.creditCards {
+    vertical-align: top;
+    text-align: right;
+    line-height: 1rem;
+    margin-right: 3.5rem;
+}
+
+label#cardType {
+    text-align: left;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+label#cardType1{
+    background: url("../img/visa.jpg") no-repeat;
+    width: 4rem;
+}
+
+label#cardType2{
+    background: url("../img/amex.jpg") no-repeat;
+    width: 4.2rem;
+}
+
+label#cardType3{
+    background: url("../img/mscard.jpg") no-repeat;
+    width: 6.2rem;
+}
+
+#cardField {
+   text-align: center;
+}
+
+input[type="submit"] {
+    width: 8rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #FFF;
+    font-weight: bold;
+    background-color: rgba(0,51,80,0.9);
+    border-radius: 1rem;
+}

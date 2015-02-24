@@ -1,0 +1,15 @@
+html, body, div {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font: 10px 'Arial', sans-serif #000;
+}
+
+div {
+    background-color: #F90;
+    width: 93.6%;
+    border: solid 0.1rem #234465;
+    border-radius: 4em;
+}
