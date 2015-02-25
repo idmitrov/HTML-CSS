@@ -1,0 +1,163 @@
+html, body, div, header, h1, p, form input, label {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+}
+
+html {
+    font: 10px 'Arial', sans-serif;
+    color: #FFF;
+    text-align: left;
+}
+
+body {
+    background-color: #555;
+}
+
+#sysDialog {
+    padding: 1rem;
+    background-color: #EEE;
+    width: 75.5rem;
+    height: 100%;
+}
+
+    #sysDialog header {
+        padding-bottom: 1rem;
+        font-size: 2rem;
+        color: #234465;
+    }
+    #sysDialog footer {
+        padding-bottom: 1rem;
+        font-size: 1.4rem;
+        color: #666;
+    }
+
+form {
+    padding: 1rem;
+    width: 35rem;
+    height: 25.4rem;
+}
+
+#sysRegister {
+    margin-right: 1.5rem;
+    float: left;
+}
+
+#sysLogin {
+    clear: both;
+    display: inline-block;
+    background-color: #234465;
+}
+
+label {
+    font-size: 1.4rem;
+    color: #666;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+#sysLogin label {
+    color: #FFF;
+}
+
+label mark {
+    color: #234465;
+    background-color: transparent;
+}
+
+form input {
+    display: block;
+    font-size: 1.8rem;
+    background-color: #FFF;
+    border: solid 0.2rem #CCC;
+    width: 96%;
+    height: 3.7rem;
+    margin-top: 0.9rem;
+    padding-left: 1rem;
+}
+
+form#sysRegister input:focus {
+    outline: solid 0.2rem #234465;
+}
+
+form input#regFormSubmit {
+    cursor: pointer;
+    padding: 0;
+    float: right;
+    width: 14rem;
+    background-color: transparent;
+    border-color: #234465;
+    color: #234465;
+    font-family:  'Calibri', sans-serif;
+    font-weight: bold;
+}
+
+form input#regFormSubmit:focus,
+form input#regFormSubmit:hover {
+    outline: outset 0.2rem #FF9C00;
+    background-color: #234465;
+    color: #FF9C00;
+}
+
+form input#regFormSubmit:active{
+    outline: inset 0.2rem #FF9C00;
+}
+
+form#sysLogin input{
+    border-color: #234465;
+}
+
+form#sysLogin input:focus {
+    outline: solid 0.2rem #FF9C00;
+}
+
+form#sysLogin label:nth-of-type(2) {
+    display: inline-block;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    width: 10rem;
+    height: 2rem;
+    vertical-align: top;
+}
+
+input#rememberID {
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+}
+
+input#rememberID:active,
+input#rememberID:focus{
+    outline: none!important;
+}
+
+input#loginFormSubmit {
+    cursor: pointer;
+    padding: 0;
+    margin-right: 0.4rem;
+    width: 14rem;
+    background-color: #234465;
+    float: right;
+    outline: solid 0.2rem #FF9C00;
+    font-family:  'Calibri', sans-serif;
+    color: #FFF;
+    font-weight: bold;
+}
+
+input#loginFormSubmit:focus,
+input#loginFormSubmit:active,
+input#loginFormSubmit:hover{
+    background-color: #FFF;
+    color: #234465;
+    border: none;
+}
+
+#sysLogin a {
+    color: #FFF;
+    clear: both;
+    float: right;
+    margin: 1rem 0.4rem 0 0;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Task 01</title>
+    <link rel="stylesheet" href="./style/main.css"/>
+</head>
+<body>
+    <section id="sysDialog">
+        <header>
+            <h1>Enter the system</h1>
+        </header>
+        <footer>
+            <p>It's necessary to log in your account in order to sign in for a course</p>
+        </footer>
+        <form action="#" method="post" id="sysRegister" name="regFrom">
+            <label for="usernameReg">ARE YOU NEW? <mark>REGISTER</mark></label>
+            <input type="text" id="usernameReg" placeholder="User name" required="required"/>
+            <input type="email" required="required" placeholder="Email"/>
+            <input type="password" required="required" placeholder="Password"/>
+            <input type="password" required="required" placeholder="Confirm Password"/>
+            <input type="submit" id="regFormSubmit" value="Register"/>
+        </form>
+        <form action="#" method="get" id="sysLogin" name="loginForm">
+            <label for="usernameLogin">ALREADY A STUDENT? LOGIN</label>
+            <input type="text" id="usernameLogin" placeholder="User name" required="required"/>
+            <input type="password" placeholder="Password" required="required"/>
+            <input type="checkbox" id="rememberID" value="rememberLogin"/>
+            <label for="rememberID">Remember me</label>
+            <input type="submit" id="loginFormSubmit" value="Login"/>
+            <a href="#" title="Recover password">Forgot Password</a>
+        </form>
+    </section>
+</body>
+</html>

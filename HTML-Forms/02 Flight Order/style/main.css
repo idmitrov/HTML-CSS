@@ -1,0 +1,65 @@
+html, body, section, header, h1, form, label, input, fieldset {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font: 10px 'Verdana', sans-serif;
+}
+
+section {
+    background-color: #444;
+    width: 58rem;
+    height: 38rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 0.2rem #000;
+}
+
+section header {
+    font-size: 1.6rem;
+    color: #FFF;
+    text-shadow: 0 0 0.4rem #000;
+}
+
+section form {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #EEE;
+    width: 55.4rem;
+    height: 31.6rem;
+    border: solid 0.2rem #FFF;
+}
+fieldset {
+    border: none;
+    margin-top: 2.5rem;
+}
+
+fieldset:nth-of-type(3),
+fieldset:nth-of-type(4),
+fieldset:nth-of-type(5) {
+    text-align: right;
+}
+
+input[type="time"] {
+    width: 6.8rem;
+}
+
+input[type="date"] {
+     width: 15rem;
+ }
+input[type="number"] {
+    width: 5rem;
+}
+
+#submitForm {
+    margin-top: 1rem;
+    width: 20rem;
+    height: 4rem;
+    outline: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #555;
+}

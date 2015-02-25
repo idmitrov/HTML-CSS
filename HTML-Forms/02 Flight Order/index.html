@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Task 02</title>
+    <link rel="stylesheet" href="./style/main.css"/>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Flight Order</h1>
+        </header>
+            <form action="#" method="get" name="flightReservation">
+               <fieldset>
+                   <label for="cityChoiceFrom">From</label>
+                   <select name="fromCity" id="cityChoiceFrom">
+                       <option value="Enter a city" selected="selected" disabled="disabled">Enter a city</option>
+                       <option value="Sofia">Sofia</option>
+                       <option value="Athens">Athens</option>
+                       <option value="Istanbul">Istanbul</option>
+                   </select>
+                   <label for="cityChoiceTo">To</label>
+                   <select name="fromCity" id="cityChoiceTo">
+                       <option value="Enter a city" disabled="disabled" selected="selected">Enter a city</option>
+                       <option value="Sofia">Sofia</option>
+                       <option value="Athens">Athens</option>
+                       <option value="Istanbul">Istanbul</option>
+                   </select>
+               </fieldset>
+                <fieldset>
+                    <label for="dateChoiceDeparture">Departure Date</label>
+                    <input type="date" id="dateChoiceDeparture"/>
+                    <label for="departureTimeFrom">Time interval</label>
+                    <input type="time" id="departureTimeFrom" value="00:00"/>
+                    <input type="time" id="departureTimeTo" value="00:00"/>
+                </fieldset>
+                <fieldset>
+                    <label for="dateChoiceReturn">Return Date</label>
+                    <input type="date" id="dateChoiceReturn"/>
+                    <label for="returnTimeFrom">Time interval</label>
+                    <input type="time" id="returnTimeFrom" value="00:00"/>
+                    <input type="time" id="returnTimeTo" value="00:00"/>
+                </fieldset>
+               <fieldset>
+                   <label for="ticketsOrder">Tickets</label>
+                   <input type="number" id="ticketsOrder" value="1"/>
+                   <label for="adult">Adult</label>
+                   <input type="checkbox" id="adult" checked="checked"/>
+               </fieldset>
+                <fieldset>
+                    <label for="classChoice">Class</label>
+                    <select name="flightClass" id="classChoice">
+                        <option value="economy" selected="selected">Economy</option>
+                        <option value="business">Business</option>
+                    </select>
+                </fieldset>
+                <input id="submitForm" type="submit" value="Search"/>
+        </form>
+    </section>
+</body>
+</html>

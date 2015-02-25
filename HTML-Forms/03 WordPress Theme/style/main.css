@@ -1,0 +1,39 @@
+html, body, section, header, h1, img, form, input {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    width: 36rem;
+    height: 18rem;
+    padding: 2rem;
+    background-color: #DDD;
+    border-radius: 1rem;
+}
+
+form {
+    padding-top: 1rem;
+}
+
+input,label {
+    font-size: 1.4rem;
+    height: 2rem;
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type="file"] {
+    margin-top: 1rem;
+}
+
+input[type="search"] {
+   display: block;
+    margin-top: 1rem;
+}
+
+input[type="submit"] {
+    margin-top: 1rem;
+    float: left;
+}
