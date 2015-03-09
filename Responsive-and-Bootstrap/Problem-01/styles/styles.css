@@ -1,0 +1,280 @@
+/*RESET*/
+html, body, div, header, h1, h2,  p, nav, ul, li, a, aside, section, article, footer, img {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+/*HTML SIZE AND FOND PROPERTIES*/
+html {
+    font: 10px 'Verdana', sans-serif;
+    color: #000;
+}
+/*BODY ALIGN CONTENT TO CENTER AND SET COLOR*/
+body {
+    background-color: #6699ff;
+    text-align: left;
+}
+/*ALL LIST TYPES WITHOUT BULLETS*/
+ul {
+    list-style-type: none;
+}
+/*ALL LINKS WITHOUT DECORATION*/
+a {
+    text-decoration: none;
+    color: #000;
+}
+/*ELEMENTS WITH SAME BORDER AND BACKGROUND*/
+footer,
+aside,
+article,
+#wrapper > header > nav > ul > li {
+    border: solid 0.1rem #000;
+    background-color: #e0eafe;
+}
+/*END OF RESET*/
+
+/*STYLES OVER 960px WIDTH*/
+#wrapper {
+    margin: 0 auto;
+    /*USE PIXELS BECAUSE WRAPPER MUST NOT BE CHANGED IF HTML ROOT SIZE CHANGE*/
+    width: 720px;
+}
+
+/*HEADER h1, a, img*/
+#wrapper > header {
+    border-bottom: solid 0.1rem #000;
+    margin-bottom: 2.6rem;
+
+}
+
+    #wrapper > header h1 {
+        padding-left: 1.1rem;
+        font-size: 2.8rem;
+    }
+
+        #wrapper header > h1 > a {
+            color: #FFF;
+        }
+
+            #wrapper header h1 a img {
+                vertical-align: baseline;
+                height: 5rem;
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+/*HEADER nav, ul, li, a*/
+#wrapper > header > nav {
+    text-align: right;
+    height: 2.1rem;
+}
+
+    #wrapper > header > nav > ul {
+        background-color: transparent;
+        position: relative;
+        top: 0.7rem;
+        right: 1rem;
+    }
+
+        #wrapper > header > nav > ul > li {
+            display: inline-block;
+            padding: 0.7% 1.6%;
+            margin-left:0.83%;
+            background-color: #FFF;
+        }
+
+            #wrapper > header > nav > ul > li > a {
+                font-size: 1.2rem;
+            }
+
+section {
+    padding-bottom: 1rem;
+    width: 73.61%;
+    float: left;
+    font-family: 'Arial', 'Verdana', sans-serif;
+}
+
+    section > article {
+        padding: 1.5rem 1.2rem 2.5rem 1.3rem;
+        margin-top: 1rem;
+    }
+
+    section > article:first-of-type {
+        margin: 0;
+    }
+
+        section > article > header > h1 {
+            font-size: 2rem;
+        }
+
+        section > article > div {
+            padding-top: 2rem;
+        }
+
+            section > article > div > p {
+                font-size: 1.2rem;
+            }
+
+                section > article:first-of-type p {
+                    text-align: justify;
+                }
+
+                section > article > div > p:first-letter {
+                    padding-left: 2.6rem;
+                }
+
+aside {
+    float: right;
+    padding: 1.5rem 1rem 2.2rem 1.1rem;
+    width: 20%;
+    font-size: 1.2rem;
+}
+
+    aside > div > ul > li {
+        margin-top: 1.2rem;
+    }
+
+    aside > div > ul > li:first-of-type {
+        margin-top: 0;
+    }
+
+footer {
+    padding-top: 1.6rem;
+    clear: both;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 1.6rem;
+}
+
+footer a {
+    text-decoration: underline;
+    color: #551A8B;
+}
+
+/*QUERIES*/
+
+/*780px - 960px*/
+@media screen and (min-width: 781px) and (max-width: 960px) {
+    /*CHANGE WRAPPER WIDTH*/
+    #wrapper {
+        width: 100%;
+    }
+    /*CHANGE FONT SIZE*/
+    html {
+        font-family: 'Arial', sans-serif;
+        font-size: 14px;
+    }
+
+    #wrapper header h1 a img {
+        vertical-align: middle;
+    }
+
+    aside {
+        font-size: 1.1rem;
+    }
+}
+
+/*640px - 780px*/
+@media screen and (min-width: 641px) and (max-width: 780px){
+    html {
+        font-size: 13px;
+        font-family: 'Arial', sans-serif;
+    }
+
+    #wrapper {
+        width: 100%;
+    }
+    section {
+        float: none;
+        width: 100%;
+    }
+
+    aside {
+        display: block;
+        width: 99.7%;
+        padding: 0;
+        float: none;
+    }
+
+    aside > div > ul > li:first-of-type {
+        padding-top: 1rem;
+    }
+
+    li.block {
+        display: inline-block;
+        width: 16%;
+        font-size: 1rem;
+        margin-left: 4rem;
+        text-align: center;
+        vertical-align: top;
+    }
+
+    footer {
+        margin-top: 1rem;
+    }
+}
+
+/*UNDER 640px*/
+@media screen and (max-width: 640px){
+
+    html {
+        font-size: 15px;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    #wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #wrapper > header > h1 > a > img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #wrapper > header > nav > ul {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+        #wrapper > header > nav > ul > li {
+            display: block;
+            width: 100%;
+            margin: 0;
+        }
+
+    section {
+        margin-top: 12.5rem;
+        float: none;
+        width: 100%;
+    }
+
+        section > article > div > p {
+            text-align: justify;
+        }
+
+    aside {
+        display: block;
+        width: 99.7%;
+        padding-left: 0;
+        padding-right: 0;
+        float: none;
+    }
+
+    aside ul {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    footer {
+        margin-top: 1rem;
+    }
+}

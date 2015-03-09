@@ -1,0 +1,184 @@
+html, body, header, h1, section, article, ul, li, a, p, img {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url("../../01%20Website%20Header/fonts/fTLR1wW5qq9Ui3F-pB4hXQ.woff2");
+}
+
+a {
+    text-decoration: none;
+    color: #5A5A5A
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+html {
+    font: 10px 'PT Sans', sans-serif;
+    color: #5A5A5A;
+}
+
+body {
+    text-align: center;
+    background-color: #EEEEEE;
+}
+
+body > header {
+    height: 7.2rem;
+    width: 100%;
+    background: url("../img/headerBG.jpg") repeat-x 0 0 #234465;
+}
+
+    header div#headerWrapper {
+        margin: 0 auto;
+        width: 117rem;
+        height: 7.2rem;
+        text-align: right;
+    }
+
+    header div#headerWrapper a {
+        display: inline-block;
+        margin: 2rem 2rem 0 0;
+        width: 11.6rem;
+        height: 3.2rem;
+        background-color: #FF9C00;
+        font-size: 1.4rem;
+        color: #FFF;
+        text-align: center;
+        line-height: 3rem;
+    }
+
+header div#headerWrapper a:hover {
+    text-decoration: none;
+    background-color: #DD5C00;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+body > section {
+    margin: 0 auto;
+    width: 117rem;
+    height: 60rem;/*TO CHANGE HEIGHT*/
+}
+
+    section > header {
+        font-size: 1.4rem;
+        color: #2A6496;
+        text-align: left;
+        padding: 2rem 0 2rem 4rem;
+    }
+
+ body > section > article {
+     float: left;
+     margin-left: 4rem;
+     padding: 2rem 2rem 0 2rem;
+     width: 31rem;
+     height: 39.4rem;
+     background-color: #FFF;
+}
+
+    body > section > article header {
+        text-align: left;
+        font-size: 1.4rem;
+        color: #2A6496;
+        width: 100%;
+        height: 4rem;
+    }
+
+    body > section > article div.publishInfo {
+        font-size: 1.4rem;
+        width: 100%;
+        height: 6rem;
+    }
+
+    body > section > article div.publishInfo time {
+        margin-top: 1rem;
+        float: right;
+    }
+
+    body > section > article div.publishInfo p {
+        clear: both;
+        float: left;
+        margin-top: 1rem;
+    }
+
+    body > section > article footer p a {
+        color: #AAA;
+    }
+
+    body > section > article div.details {
+        margin-top: 1rem;
+        border-top: solid 0.1rem #EEE;
+        border-bottom: solid 0.1rem #EEE;
+        clear: both;
+        width: 100%;
+        height: 22rem;
+    }
+
+    body > section > article div.details img {
+        margin: 2rem 0 2rem 0;
+    }
+
+    body > section > article div.details a {
+        text-align: left;
+        font-size: 1.6rem;
+        display: block;
+    }
+
+    body > section > article footer {
+        text-align: left;
+        height: 6rem;
+        font-size: 1.4rem;
+    }
+    body > section > article footer p {
+        padding-top: 2rem;
+        line-height: 2rem;
+    }
+
+body > section > nav {
+    clear: both;
+    display: inline-block;
+    margin-top: 5.5rem;
+    width: 100%;
+    height: 3.4rem;
+}
+
+body > section > nav  > ul {
+    width: 113rem;
+    height:100%;
+    margin-left: 4rem;
+}
+
+body > section > nav > ul > li {
+    float: left;
+    width: 3.4rem;
+    height: 100%;
+}
+
+body > section > nav > ul > li a {
+    border: solid 0.2rem #fff;
+    background-color: #4CA0DB;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 3rem;
+    font-size: 1.4rem;
+    color: #FFF;
+}
+
+body > section > nav > ul > li a.active,
+body > section > nav > ul > li a:hover {
+    background-color: #FF9C00;
+}
+

@@ -1,0 +1,213 @@
+html, body, div, header, h1, h2, section, article, figure, img {
+  padding: 0;
+  margin: 0;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(0.2rem, 0.1rem) rotate(0deg);
+  }
+
+  10% {
+    -webkit-transform: translate(-0.1rem, -0.2rem) rotate(-1deg);
+  }
+
+  20% {
+    -webkit-transform: translate(-0.3rem, 0) rotate(1deg);
+  }
+
+  30% {
+    -webkit-transform: translate(0, 0.2rem) rotate(0deg);
+  }
+
+  40% {
+    -webkit-transform: translate(0.1rem, -0.1rem) rotate(1deg);
+  }
+
+  50% {
+    -webkit-transform: translate(-0.1rem, 0.2rem) rotate(-1deg);
+  }
+
+  60% {
+    -webkit-transform: translate(-0.3rem, 0.1rem) rotate(0deg);
+  }
+
+  70% {
+    -webkit-transform: translate(0.2rem, 0.1rem) rotate(-1deg);
+  }
+
+  80% {
+    -webkit-transform: translate(-0.1rem, -0.1rem) rotate(1deg);
+  }
+
+  90% {
+    -webkit-transform: translate(0.2rem, 0.2rem) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: translate(0.1rem, -0.2rem) rotate(-1deg);
+  }
+}
+
+@-webkit-keyframes shake {
+  0% {
+    transform: translate(0.2rem, 0.1rem) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-0.1rem, -0.2rem) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-0.3rem, 0) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(0, 0.2rem) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(0.1rem, -0.1rem) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-0.1rem, 0.2rem) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-0.3rem, 0.1rem) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(0.2rem, 0.1rem) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-0.1rem, -0.1rem) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(0.2rem, 0.2rem) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(0.1rem, -0.2rem) rotate(-1deg);
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+    width: 12.8rem;
+    height: 12.8rem;
+  }
+
+  25% {
+    -webkit-transform: translate(200px, 50px) rotate(0deg);
+  }
+
+  50% {
+    -webkit-transform: translate(200px, 50px) rotate(360deg);
+    width: 19.6rem;
+    height: 19.6rem;
+  }
+
+  100% {
+    -webkit-transform: translate(0px, 0px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+    width: 12.8rem;
+    height: 12.8rem;
+  }
+
+  25% {
+    transform: translate(200px, 50px) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(200px, 50px) rotate(360deg);
+    width: 19.6rem;
+    height: 19.6rem;
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+html {
+  font: 10px 'Arial', sans-serif;
+  color: #000;
+  body {
+    background-color: #222;
+    text-align: center;
+    overflow: hidden;
+    #wrapper {
+      margin: 2% auto;
+      padding: 1rem;
+      background-color: #333;
+      width: 44.4rem;
+      border: solid 0.2rem #555;
+      section {
+        header {
+          h1 {
+            font-size: 3rem;
+            color: #FA1;
+          }
+        }
+        article {
+          background-color: rgba(0, 0, 0, 0.1);
+          padding: 1rem;
+          header {
+            h1 {
+              padding: 1rem 0 1rem 0;
+              font-size: 2rem;
+              color: #666;
+            }
+          }
+          figure {
+            div.row {
+              margin-top: 1rem;
+            }
+            div.col {
+              display: inline-block;
+              margin-left: 1rem;
+              width: 12.8rem;
+              height: 12.8rem;
+
+              &:nth-of-type(1),
+              &:nth-of-type(4),
+              &:nth-of-type(7) {
+                margin-left: 0;
+              }
+
+              &:hover,
+              &:focus {
+                -webkit-animation: shake 1s;
+                -moz-animation: shake 1s;
+                animation: shake 1s;
+              }
+              img {
+                cursor: pointer;
+                &:focus,
+                &:hover {
+                  float: left;
+                  -webkit-animation: rotate 3s;
+                  -webkit-animation-delay: 1s;
+                  -moz-animation: rotate 3s;
+                  -moz-animation-delay: 1s;
+                  animation: rotate 3s;
+                  animation-delay: 1s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+html, body, div, header, h1, h2,  p, nav, ul, li, a, aside, section, article, footer, img {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font: 10px 'Arial', sans-serif;
+    color: #000;
+}
+
+body {
+    background-color: #6699ff;
+    text-align: center;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+
+#wrapper {
+    background-color: red;
+    margin: 0 auto;
+    width: 78rem;
+}
+
+/*HEADER*/
+body > #wrapper > header{
+    width: 100%;
+    text-align: left;
+}
+        body > #wrapper > header > h1 > a {
+            text-decoration: none;
+            font-size: 2.6rem;
+            color: #FFF;
+        }
+            body > #wrapper > header > h1 > a > img {
+                vertical-align: bottom;
+                width: 27.7%;
+                max-width: 100%;
+            }
+
+/*NAV*/
+nav {
+    margin-top: 1rem;
+}
+
+nav ul{
+    text-align: right;
+    margin-right: 0.50%;
+}
+
+nav > ul > li {
+    display: inline-block;
+    width: 13.687%;
+    height: 2.6rem;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    background-color: #FFF;
+    border: solid 0.1rem #000;
+    margin-right: 1.20%;
+}
+
+nav > ul > li > a {
+    font-size: 1.4rem;
+    color: #000;
+    text-decoration: none;
+}
+
+
+section {
+    float: left;
+    width: 72.917%;
+}
+
+
+/*ARTICLE*/
+article {
+    background-color: #e0eafe;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    text-align: left;
+    border: solid 0.1rem #000;
+}
+
+article p {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+
+article p:first-letter {
+    padding-left:2rem;
+}
+
+aside {
+    float: right;
+    background-color: #e0eafe;
+    margin-top: 1rem;
+    padding: 1.4rem 0 2.2rem 1rem;
+    font-size: 1.4rem;
+    text-align: left;
+    border: solid 0.1rem #000;
+    width: 24.4%;
+}
+
+aside li {
+    margin-top: 1rem;
+}
+
+aside li a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer {
+    clear: both;
+    display: inline-block;
+    width: 100%;
+    margin-top: 1rem;
+    padding-top: 1.8rem;
+    font-size: 1.2rem;
+    background-color: #e0eafe;
+    border: solid 0.1rem #000;
+}

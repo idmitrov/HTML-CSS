@@ -1,0 +1,295 @@
+html, body, header, h1, img, div, span, form, input, nav, ul, li, a {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/fTLR1wW5qq9Ui3F-pB4hXQ.woff2");
+}
+
+html {
+    font: 10px 'PT Sans', sans-serif;
+    color: #FFF;
+}
+
+body {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li:hover {
+    color: #000;
+}
+
+div#wrapper {
+    width: 100%;
+    height: 10.6rem;
+    background-color: #234465;
+}
+
+header {
+    margin: 0 auto;
+    width: 130rem;
+    height: 7.6rem;
+    padding: 2rem 0 1rem 0;
+    background-color: #234465;
+}
+
+    header h1 {
+        display: inline-block;
+        width: 25.5rem;
+        height: 6.5rem;
+    }
+
+header div#userPanel {
+    display: inline-block;
+    margin-left: 26%;
+    margin-right: 1rem;
+    height: 3.2rem;
+    width: 40rem;
+    vertical-align: top;
+    text-align: right;
+    line-height: 3rem;
+}
+
+    #userPanel div {
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        font-size: 1.8rem;
+        color: #FFF;
+        height: 3.2rem;
+    }
+
+    #notifications {
+        display: inline-block;
+        background: url("../img/notificationsIcon.png") no-repeat right center;
+        padding-right: 2.2rem;
+        width: 1rem;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    #notificationsSub,
+    #userCPSub {
+        display: none;
+        position: absolute;
+        top: 3rem;
+        right: 0;
+        z-index: 1;
+        width: 18rem;
+        text-align: left;
+        background-color: #234465;
+        border: solid 0.2rem #CCC;
+        border-radius: 0.5rem;
+    }
+
+    #notificationsSub li,
+    #userCPSub li {
+        padding-left: 1rem;
+        width: 95%;
+        border-top: solid 0.2rem #CCC;
+    }
+
+    #notificationsSub li:first-of-type,
+    #userCPSub li:first-of-type {
+        border: none;
+        border-top-right-radius: 0.3rem;
+        border-top-left-radius: 0.3rem;
+    }
+
+    #notificationsSub li:last-of-type,
+    #userCPSub li:last-of-type {
+        border-bottom-right-radius: 0.3rem;
+        border-bottom-left-radius: 0.3rem;
+    }
+
+    #notificationsSub li:hover,
+    #userCPSub li:hover {
+        background-color: #CCC;
+        -webkit-transition: background-color 1s;
+        -moz-transition: background-color 1s;
+        -ms-transition: background-color 1s;
+        -o-transition: background-color 1s;
+        transition: background-color 1s;
+    }
+
+    #notifications:hover #notificationsSub,
+    #userCP:hover #userCPSub {
+        display: block;
+    }
+
+    #userCP {
+        display: inline-block;
+        margin-left: 2rem;
+        width: 6rem;
+    }
+
+form {
+    background-color: #FFF;
+    display: inline-block;
+    text-align: right;
+    margin-left: 1rem;
+    width: 26rem;
+    height: 3.2rem;
+    vertical-align: top;
+    border-radius: 0.5rem;
+}
+
+form input[type="search"] {
+    vertical-align: top;
+    padding-left:  1rem;
+    width: 23rem;
+    height: 3.2rem;
+    font-size: 1.4rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+form input[type="submit"] {
+    width: 3rem;
+    height: 3.2rem;
+    margin-left: -0.3rem;
+    background: url("../img/magn-glass-icon17.png") no-repeat 0.5rem 0.8rem;
+    border-left:  solid 0.2rem #D5D5D5;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: url("../img/magn-glass-icon17.png") no-repeat scroll  0.7rem 0.8rem #367CAE;
+    border: none;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+ }
+
+#navWrap {
+    vertical-align: top;
+    display: inline-block;
+    width: 92.3rem;
+    height: 6.4rem;
+}
+
+
+nav {
+    text-align: right;
+    display: block;
+    height: 3.2rem;
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+nav ul {
+    line-height: 5.5rem;
+    height: 3.5rem;
+}
+
+nav ul li {
+    margin-left: 4rem;
+    display: inline-block;
+}
+
+nav ul li:first-of-type {
+    margin: 0;
+}
+
+.arrow {
+    display: inline-block;
+    width: 0 ;
+    height: 0;
+    margin-left: 0.2rem;
+    vertical-align: middle;
+    border-top: solid 0.4rem #FFF;
+    border-left: solid 0.4rem transparent;
+    border-right: solid 0.4rem transparent;
+}
+
+#about,
+#trainings {
+    position: relative;
+}
+
+#aboutSub,
+#trainingsSub {
+    text-align: left;
+    display: none;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    border: solid 0.2rem #CCC;
+    border-radius: 0.5rem;
+    background-color: #234465;
+    width: 20rem;
+    height: 28.4rem;
+}
+
+#about:hover #aboutSub,
+#trainings:hover #trainingsSub {
+    display: block;
+}
+
+#about:hover #aboutSub li,
+#about:hover #aboutSub li a,
+#trainings:hover #trainingsSub li,
+#trainings:hover #trainingsSub li a {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+#about:hover #aboutSub li,
+#trainings:hover #trainingsSub li {
+    border-top: solid 0.2rem #CCC;
+}
+
+#about:hover #aboutSub li:first-of-type,
+#trainings:hover #trainingsSub li:first-of-type {
+    border-top-right-radius: 0.2rem;
+    border-top-left-radius: 0.2rem;
+    border: none;
+}
+#about:hover #aboutSub li:last-of-type,
+#trainings:hover #trainingsSub li:last-of-type {
+    border-bottom: solid 0.2rem #CCC;
+    border-bottom-left-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+}
+
+#about:hover #aboutSub li:hover,
+#trainings:hover #trainingsSub li:hover {
+    background-color: #CCC;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+#about:hover #aboutSub li a,
+#trainings:hover #trainingsSub li a {
+    padding-left: 1rem;
+    width: 95%;
+    height: 100%;
+}
+
+#about:hover #aboutSub li a:hover,
+#trainings:hover #trainingsSub li a:hover {
+    color: #000;
+}
