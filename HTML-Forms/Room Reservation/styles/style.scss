@@ -1,0 +1,139 @@
+@import '../styles/reset/reset.scss';
+
+html {
+	font: 10px 'Tahoma', 'Helvetica', sans-serif;
+	color: #444;
+	body {
+		font-size: 1.3rem;
+		background-color: #BFBFBF;
+	}
+}
+
+#wrapper {
+	margin: 0 auto;
+	max-width: 80rem;
+	width: 100%;
+	background-color: #EBEBEB;
+	padding: 0 3rem;
+	min-height: 102.4rem;
+	box-shadow: 0 0 0.1rem #000;
+}
+
+.reservation-header {
+	padding: 2rem;
+	background-color: #F1F1F1;
+}
+
+.reservation-heading {
+	font: 2.8rem 'Helvetica';
+	color: #3399FF;
+}
+
+.row {
+	padding: 2rem;
+	border-bottom: dashed 0.1rem #CCC;
+	border-top: dashed 0.1rem #CCC;
+	font-size: 0;
+	&.search-reservation-area {
+		border-bottom: none;
+		padding: 3rem 2rem;
+		& .col-sm {
+			padding-left: 1.9rem;
+		}
+	}
+}
+
+.col {
+	display: inline-block;
+	font-size: 1rem;
+	vertical-align: top;
+	&.col-lg {
+		width: 75%;
+	}
+	&.col-sm {
+		width: 25%;
+	}
+}
+
+#search-reservation-form {
+	background-color: #FFF;
+	font-size: 0;
+	padding: 1rem;
+	margin-top: 0.5rem;
+}
+
+.form-hint {
+	display: block;
+	font-size: 1.6rem;
+}
+
+.form-input {
+	border: solid 0.1rem #CCC;
+	border-radius: 0.4rem;
+	padding: 1rem;
+}
+
+#search-reservation-button,
+#search-reservation-input {
+	vertical-align: top;
+}
+
+#search-reservation-button {
+	width: 15%;
+	height: 15%;
+	min-width: 1.2rem;
+	background: url('../images/search_bttn.png') center center no-repeat transparent;
+	background-size: 5rem 5rem;
+	cursor: pointer;
+	&:active {
+		background-size: 4.5rem 4.5rem;
+	}
+}
+
+#search-reservation-input {
+	width: 85%;
+}
+
+.text {
+	font-size: 1.2rem;
+	line-height: 2rem;
+	color: #666;
+}
+
+#request-reservation-form,
+#request-reservation-form .row {
+	border: none;
+	padding: none;
+}
+
+#request-reservation-form.row .row {
+	padding-right: 0;
+}
+
+.row.request-reservation-area {
+	padding: 0;
+}
+
+#request-reservation-form .col-sm {
+	padding-right: 2rem;
+}
+
+#request-reservation-form .row .col-sm {
+	padding-right: 0;
+}
+
+#request-reservation-form .col-sm .form-input {
+	margin-top: 2rem;
+	width: 100%;
+}
+
+#select-room {
+	width: 85%;
+}
+
+#count-room.form-input.room-count {
+	margin-top: 0;
+	padding-right: 0;
+}
+
+@import '../styles/responsive/responsive.scss';

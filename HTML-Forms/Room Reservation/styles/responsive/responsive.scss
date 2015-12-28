@@ -1,0 +1,48 @@
+@media screen and (max-width: 721px) {
+	#wrapper {
+		word-wrap: break-word;
+	}
+
+	.row.search-reservation-area,
+	.row.request-reservation-area {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.col {
+		display: block;
+		padding: 0;
+		margin: 0;
+		&.col-lg, 
+		&.col-sm {
+			width: 100%;
+		}
+	}
+
+	#request-reservation-form .row {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.row.search-reservation-area .col-sm,
+	#request-reservation-form .col-sm,
+	#request-reservation-form .col-lg {
+		padding: 0;
+	}
+
+	#request-reservation-form .form-hint {
+		margin-top: 1rem;
+	}
+
+	#search-reservation-input {
+		width: 95%;
+	}
+
+	#search-reservation-button {
+		width: 5%;
+	}
+
+	#select-room {
+		width: 100%;
+	}
+}

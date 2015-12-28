@@ -1,0 +1,18 @@
+html, body, div,
+header, h1, h2, h3,
+article,
+form, input, label, select, option {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+input, select, option {
+	outline: none;
+	border: none;
+}
+
+label {
+	display: block;
+	cursor: pointer;
+}

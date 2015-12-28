@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Room Reservation</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<article>
+			<header class="reservation-header">
+				<h2 class="reservation-heading">Room Reservation</h2>
+			</header>
+			<div class="row search-reservation-area">
+				<div class="col col-lg">
+					<h3 class="form-hint">Basic Information</h3>
+					<p class="text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at nibh varius odio sollicitudin blandit nec eu elit. Suspendisse ac risus nunc, quis elementum lorem. Pellentesque vehicula egestas eros nec commodo.
+					</p>
+				</div>
+				<div class="col col-sm">
+					<label for="search-reservation-input">
+						<strong>Search</strong>
+					</label>
+					
+					<form class="form-input" id="search-reservation-form" action="" method="get">
+						<input id="search-reservation-input" required type="search" name="reservationName">
+						<input id="search-reservation-button" type="submit" value="">
+					</form>
+				</div>
+			</div>
+			<div class="row request-reservation-area">
+				<form class="row" id="request-reservation-form" action="index_submit" method="get" accept-charset="utf-8">
+					<div class="col col-sm">
+						<strong class="form-hint">Personal Details</strong>
+						
+						<input class="form-input" type="text" name="firstName" placeholder="First Name" />
+						<input class="form-input" type="text" name="lastName" placeholder="Last Name" />
+						<input class="form-input" type="email" name="email"  placeholder="Enter Emal"/>
+					</div>
+					<div class="col col-lg">
+						<strong class="form-hint">Request a reservation</strong>
+
+						<div class="row">
+							<div class="col col-lg">
+								<label for="select-room">Select a room:</label>
+								<select id="select-room" class="form-input room-select" name="roomSelection">
+									<option value="1">Room 1</option>
+									<option value="2">Room 2</option>
+									<option value="3">Room 3</option>
+									option
+								</select>
+							</div>
+
+							<div class="col col-sm">
+								<label for="count-room">Number of Rooms:</label>
+								<input id="count-room" class="form-input room-count" value="1" type="number" name="roomNumbers" min="1">
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</article>
+	</div>
+</body>
+</html>
