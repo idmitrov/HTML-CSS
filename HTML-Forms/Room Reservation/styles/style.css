@@ -21,6 +21,10 @@ html {
     font-size: 1.3rem;
     background-color: #BFBFBF; }
 
+label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem; }
+
 #wrapper {
   margin: 0 auto;
   max-width: 80rem;
@@ -116,10 +120,12 @@ html {
   margin-top: 2rem;
   width: 100%; }
 
-#select-room {
+#select-room,
+#check-in.form-input.room-select {
   width: 85%; }
 
-#count-room.form-input.room-count {
+#count-room.form-input.room-count,
+#check-in.form-input.room-count {
   margin-top: 0;
   padding-right: 0; }
 
@@ -157,7 +163,8 @@ html {
   #search-reservation-button {
     width: 5%; }
 
-  #select-room {
+  #select-room,
+  #check-in.form-input.room-select {
     width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

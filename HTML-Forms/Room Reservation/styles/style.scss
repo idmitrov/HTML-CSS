@@ -9,6 +9,11 @@ html {
 	}
 }
 
+label {
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+}
+
 #wrapper {
 	margin: 0 auto;
 	max-width: 80rem;
@@ -127,11 +132,13 @@ html {
 	width: 100%;
 }
 
-#select-room {
+#select-room,
+#check-in.form-input.room-select {
 	width: 85%;
 }
 
-#count-room.form-input.room-count {
+#count-room.form-input.room-count,
+#check-in.form-input.room-count {
 	margin-top: 0;
 	padding-right: 0;
 }
