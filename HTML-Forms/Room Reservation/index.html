@@ -34,9 +34,9 @@
 					<div class="col col-sm">
 						<strong class="form-hint">Personal Details</strong>
 						
-						<input class="form-input" type="text" name="firstName" placeholder="First Name" />
-						<input class="form-input" type="text" name="lastName" placeholder="Last Name" />
-						<input class="form-input" type="email" name="email"  placeholder="Enter Emal"/>
+						<input class="form-input" type="text" name="firstName" required placeholder="First Name" />
+						<input class="form-input" type="text" name="lastName" required placeholder="Last Name" />
+						<input class="form-input" type="email" name="email" required  placeholder="Enter Emal"/>
 					</div>
 					<div class="col col-lg">
 						<strong class="form-hint">Request a reservation</strong>
@@ -47,7 +47,7 @@
 								<select id="select-room" class="form-input room-select" name="roomSelection">
 									<option value="1">Room 1</option>
 									<option value="2">Room 2</option>
-									<option value="3">Room 3</option>
+									<option value="3" selected>Room 3</option>
 									option
 								</select>
 							</div>
@@ -61,15 +61,17 @@
 						<div class="row">
 							<div class="col col-lg">
 								<label for="check-in">Check-In:</label>
-								<input type="date" id="check-in" class="form-input room-select" name="checkIn" />
+								<input type="date" id="check-in" class="form-input room-select" name="checkIn" required />
 							</div>
 
 							<div class="col col-sm">
 								<label for="check-out">Check-Out:</label>
-								<input id="check-in" class="form-input room-count" type="date" name="checkOut">
+								<input id="check-in" class="form-input room-count" type="date" name="checkOut" required>
 							</div>
 						</div>
 					</div>
+
+					<input id="book-now-button" type="submit" name="bookNow" value="Book Now">
 				</form>
 			</div>
 		</article>

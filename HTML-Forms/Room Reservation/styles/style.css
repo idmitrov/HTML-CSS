@@ -31,7 +31,6 @@ label {
   width: 100%;
   background-color: #EBEBEB;
   padding: 0 3rem;
-  min-height: 102.4rem;
   box-shadow: 0 0 0.1rem #000; }
 
 .reservation-header {
@@ -99,6 +98,9 @@ label {
   line-height: 2rem;
   color: #666; }
 
+#request-reservation-form {
+  position: relative; }
+
 #request-reservation-form,
 #request-reservation-form .row {
   border: none;
@@ -108,7 +110,8 @@ label {
   padding-right: 0; }
 
 .row.request-reservation-area {
-  padding: 0; }
+  padding: 0;
+  padding-bottom: 8rem; }
 
 #request-reservation-form .col-sm {
   padding-right: 2rem; }
@@ -129,9 +132,31 @@ label {
   margin-top: 0;
   padding-right: 0; }
 
+#request-reservation-form .col-lg .row {
+  padding-bottom: 0; }
+
+#book-now-button {
+  position: absolute;
+  bottom: -5rem;
+  right: 2rem;
+  padding: 1rem 5rem;
+  background-color: #2EA5DF;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: #FFF;
+  font-weight: bold; }
+  #book-now-button:hover {
+    background-color: #0F1;
+    transition: background-color 2s; }
+  #book-now-button:active {
+    padding: 0.9rem 4.9rem; }
+
 @media screen and (max-width: 721px) {
   #wrapper {
     word-wrap: break-word; }
+
+  label {
+    margin: 1rem 0 1rem 1rem; }
 
   .row.search-reservation-area,
   .row.request-reservation-area {
@@ -144,6 +169,10 @@ label {
     margin: 0; }
     .col.col-lg, .col.col-sm {
       width: 100%; }
+
+  #request-reservation-form {
+    padding-left: 0;
+    padding-right: 0; }
 
   #request-reservation-form .row {
     padding-left: 0;
@@ -165,6 +194,11 @@ label {
 
   #select-room,
   #check-in.form-input.room-select {
+    width: 100%; }
+
+  #book-now-button {
+    position: static;
+    margin-top: 2rem;
     width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

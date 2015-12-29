@@ -20,7 +20,6 @@ label {
 	width: 100%;
 	background-color: #EBEBEB;
 	padding: 0 3rem;
-	min-height: 102.4rem;
 	box-shadow: 0 0 0.1rem #000;
 }
 
@@ -105,6 +104,10 @@ label {
 	color: #666;
 }
 
+#request-reservation-form {
+	position: relative;
+}
+
 #request-reservation-form,
 #request-reservation-form .row {
 	border: none;
@@ -117,6 +120,7 @@ label {
 
 .row.request-reservation-area {
 	padding: 0;
+	padding-bottom: 8rem;
 }
 
 #request-reservation-form .col-sm {
@@ -141,6 +145,29 @@ label {
 #check-in.form-input.room-count {
 	margin-top: 0;
 	padding-right: 0;
+}
+
+#request-reservation-form .col-lg .row {
+	padding-bottom: 0;
+}
+
+#book-now-button {
+	position: absolute;
+	bottom: -5rem;
+	right: 2rem;
+	padding: 1rem 5rem;
+	background-color: #2EA5DF;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	color: #FFF;
+	font-weight: bold;
+	&:hover {
+		background-color: #0F1;
+		transition: background-color 2s;
+	}
+	&:active {
+		padding: 0.9rem 4.9rem;
+	}
 }
 
 @import '../styles/responsive/responsive.scss';
